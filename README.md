@@ -1,7 +1,7 @@
 # UppgiftSystemIntegration
 Inlämnings uppgift för system integration
 
-All kod liger i master branchen >> uppgift >> main.py
+All kod ligger i master branchen >> uppgift >> main.py
 
 Jag har fokuserat på att utföra uppgiften för ett hus, men att man kan kolla data från weatherAPI vart man vill.
 Jag har hårdkodat data då vi inte har någon sensor att koppla ihopp den med, där jag sätter temperatur som en float och radiator och gardin status som en bool.
