@@ -9,6 +9,7 @@ Jag har lagt alla sensor i en list beroende på deras funktionalitet så att man
 För att uppdatera sensorernas inställning har jag gjort classer som berättar vad för typ av data som man kan ändra, och sen måste man ange id för vilken gardin eller radiator man vill ändra, medans för temperatur kommer båda sensorerna att få det givna värdet, vilket man gör genom post.
 
 
+
 Smart Home API (Lokal tjänst):
 
 Tokenbaserad autentisering: 
@@ -19,6 +20,8 @@ En funktion implementeras för att överföra data till molnet genom HTTP-anrop.
 
 Mottagande av instruktioner från molnet:
 API:et lyssnar på specifika endpoints för instruktioner som ska utföras i hemmet och tar emot dessa instruktioner från molnet.
+
+
 
 Molnbaserad tjänst:
 
@@ -33,6 +36,8 @@ Efter authentikarisering kan men via det lokala Smart Home API:et kan göra för
 
 Push-meddelanden: 
 Molntjänsten implementerar push-meddelanden till Smart Home API:et för att meddela användaren om nya instruktioner eller uppdateringar som behöver göras i husen.
+
+
 
 Exempel på Kommunikation Mellan Smart Home API och Cloud Service:
 
@@ -50,6 +55,8 @@ Det lokala API:et skickar den uppdaterade radiatorstatusen till molntjänsten ge
 
 Lagring och Notifikation: 
 Molntjänsten tar emot uppdateringen och lagrar den i sin databas, och skickar sedan en push-notifikation till användarens mobilapp eller webbapplikation för att meddela om radiatorstatusens ändring.
+
+
 
 Under är en bild som visar en ritning för g samt vg nivå.
 
