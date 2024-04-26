@@ -11,3 +11,6 @@ Man hade kunnat tillämpa flera hus enkelt genom att skapa en class med hus som 
 Genom att skapa en class för alla hus skulle varje hus kunna ha ett unikt lösenord och användarnamn, jag skulle även använda mig av Oauth istället samt spara API nycklarna i en miljövariabel.
 Ifall man vill lägga till mer funktionaliteter kan det lätta tillämpas på samma sätta som tidigare funktionaliteterna.
 Under är en bild som visar en ritning för g samt vg nivå.
+
+
+![bild_uppgift_system](https://github.com/BergetAlex/UppgiftSystemIntegration/assets/149575877/7aa5495f-54d5-4890-a5dd-b0122c3a4167)
