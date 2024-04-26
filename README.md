@@ -13,8 +13,10 @@ Smart Home API (Lokal tjänst):
 
 Tokenbaserad autentisering: 
 Användare autentiseras med hjälp av tokens för att säkerställa auktoriserad åtkomst till API:et.
+
 Överföring av data till molnet: 
 En funktion implementeras för att överföra data till molnet genom HTTP-anrop. Detta inkluderar information om temperaturer, gradiner och radiatorer.
+
 Mottagande av instruktioner från molnet:
 API:et lyssnar på specifika endpoints för instruktioner som ska utföras i hemmet och tar emot dessa instruktioner från molnet.
 
@@ -22,10 +24,13 @@ Molnbaserad tjänst:
 
 Användarautentisering: 
 Anända sig av Oauth2
+
 Användargränssnitt: 
 En användarvänlig webbapplikation skapas där användare kan välja hus och ifall den authentikerar sig skickas den vidare till Smart Home API:et.
+
 API för huskontroll: 
 Efter authentikarisering kan men via det lokala Smart Home API:et kan göra förfrågningar för att styra husen. Molntjänsten hanterar dessa instruktioner och skickar dem till rätt hus.
+
 Push-meddelanden: 
 Molntjänsten implementerar push-meddelanden till Smart Home API:et för att meddela användaren om nya instruktioner eller uppdateringar som behöver göras i husen.
 
@@ -33,12 +38,16 @@ Exempel på Kommunikation Mellan Smart Home API och Cloud Service:
 
 Användareinteraktion: 
 Användaren loggar in på den molnbaserade webbappen och väljer det specifika huset de vill justera radiatorerna för.
+
 Begäran om Radiatorändring: 
 Efter att loggat in skickas den vidare till Smart Home API:et, der Användareren kan begära ändringar.
+
 Verifikation och Uppdatering: 
 Det lokala API:et tar emot och verifierar begäranen, godkänner den och uppdaterar den interna databasen med den nya radiatorstatusen.
+
 Överföring av Data till Molnet: 
 Det lokala API:et skickar den uppdaterade radiatorstatusen till molntjänsten genom en HTTP POST-förfrågan.
+
 Lagring och Notifikation: 
 Molntjänsten tar emot uppdateringen och lagrar den i sin databas, och skickar sedan en push-notifikation till användarens mobilapp eller webbapplikation för att meddela om radiatorstatusens ändring.
 
